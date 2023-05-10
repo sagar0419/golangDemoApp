@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo App</title>
+	<style>
+		body {
+			background: url("https://images4.alphacoders.com/131/1311600.jpg") no-repeat center center fixed; 
+			background-size: cover;
+		}
+        h1 {
+			color: white;
+			font-weight: bold;
+			font-style: italic;
+            text-align: right;
+			margin-right: 0;
+            margin-top: 11em;
+		}        
+        p {
+			color: rgb(238, 118, 118);
+			font-weight: bold;
+			font-style: italic;
+            text-align: right;
+			margin-right: 0;
+            margin-top: 0em;
+            font-size: 26px;
+		}
+        button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 24px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+            font-weight: bold;
+			font-style: italic;
+            position: absolute;
+            right: 0;
+			font-size: 16px;
+			margin-top: 1em;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="margin-right: 0;">Go Lang Demo</h1>
+    <p style="margin-right: 0;">This page is created by Sagar Parmar for Go lang Demo</p>
+    <button id="myButton">Click Me!</button>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://localhost:3000/api");
+            xhr.onreadystatechange = function() {
+				if (xhr.readyState === 4 && xhr.status >= 200 && xhr.status < 300) {
+                window.location.href = "http://localhost:3000/api";
+                }
+            };
+            xhr.send();
+        });
+    </script>    
+</body>
+</html>
