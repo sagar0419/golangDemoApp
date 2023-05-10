@@ -12,6 +12,5 @@ func main() {
 	mux.HandleFunc("/", web.HomePage)
 	mux.HandleFunc("/api", web.Backend)
 	fmt.Println("Server is listening on localhost port 3000")
-
 	http.ListenAndServe(":3000", mux)
 }
