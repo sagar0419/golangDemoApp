@@ -14,11 +14,12 @@ func main() {
 	db.CreateTable()
 
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", web.HomePage)
 	mux.HandleFunc("/api", web.Backend)
+	mux.HandleFunc("/form", web.FormHandler)
+	mux.HandleFunc("/upload", api.Submit)
 	mux.HandleFunc("/cinema", api.Cinema)
 	mux.HandleFunc("/record", api.MovieDetail)
-
+	mux.HandleFunc("/", web.HomePage)
 	fmt.Println("Server is listening on localhost port 3000")
 	http.ListenAndServe(":3000", mux)
 }
