@@ -6,9 +6,9 @@ This app use MySql Database to store all info and it runs on port 3000.
 
 You need to few values as env to run this code.
 
-```sh 
 Set these as env variables to use in code Or you can use your own envs.
 
+```sh
 export MYSQL_USER="root"
 export MYSQL_PASSWORD="password"
 export MYSQL_DATABASE="db"
