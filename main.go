@@ -1,15 +1,15 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-
 	api "demo/github.com/api"
 	db "demo/github.com/pkg/db"
 	web "demo/github.com/web"
+	"fmt"
+	"net/http"
 )
 
 func main() {
+
 	db.CreateDb()
 	db.CreateTable()
 
