@@ -10,7 +10,7 @@ import (
 // export MYSQL_USER="root"
 // export MYSQL_PASSWORD="password"
 // export MYSQL_DATABASE="db"
-// export DBNAME="citadel"
+// export DBNAME="hey"
 // export HSTNAME="127.0.0.1:3306"
 
 var (

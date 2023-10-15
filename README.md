@@ -1,8 +1,8 @@
-# This is ago lang demo app
+# This is a GoLang demo app
 
-In this app you can upload your file , save data (Movie and hero name), List your saved files and movies.
+In this app you can upload your file , save data (Movie and hero name) and you can also list your saved files and movies.
 
-This app use Database to store all info and it runs on port 3000.
+This app use MySql Database to store all info and it runs on port 3000.
 
 You need to few values as env to run this code.
 
@@ -12,7 +12,7 @@ Set these as env variables to use in code Or you can use your own envs.
 export MYSQL_USER="root"
 export MYSQL_PASSWORD="password"
 export MYSQL_DATABASE="db"
-export DBNAME="citadel"
+export DBNAME="hey"
 export HSTNAME="127.0.0.1:3306"
 ```
 
